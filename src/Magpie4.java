@@ -81,7 +81,7 @@ public class Magpie4
                     statement = statement.substring(0, statement
                             .length() - 1);
                 }
-                int psn = findKeyword (statement, "I like" , 0);
+                psn = findKeyword (statement, "I like" , 0);
                 String restOfStatement = statement.substring(psn + 6).trim();
                 return "Why do you like " + restOfStatement + "?";
 			}
